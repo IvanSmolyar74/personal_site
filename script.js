@@ -104,11 +104,11 @@ window.addEventListener("scroll", function () {
 });
 var toggleMenu = document.querySelector(".menu-toggle"),
     navbarMenu = document.querySelector(".navbar-menu");
-console.log(toggleMenu);
 
 toggleMenu.onclick = function () {
   toggleMenu.classList.toggle("active");
   navbarMenu.classList.toggle("active");
+  document.body.classList.toggle("overflow_hidden");
 };
 
 /***/ })
